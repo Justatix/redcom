@@ -1,305 +1,191 @@
-<script>
-    import { dues } from '$lib/utils/helper';
-    let one, oneOne, oneOneOne, oneTwo, oneTwoOne, oneTwoTwo, oneTwoThree, oneTwoFour, oneTwoFive, oneThree;
-    let two, twoOne, twoTwo, twoThree;
-    let three, threeOne;
-    let four, fourOne, fourTwo;
-    let five, fiveOne;
-    let six, sixOne, sixTwo, sixThree;
-    let seven, sevenOne, sevenTwo, sevenThree;
+<meta
+  name    = "color-scheme"
+  content = "light dark"
+/>
+<h1 style="font-weight: 400; padding-left: 30px;"><strong> The By-laws of the RedCom League </strong></h1>
+<p style="font-weight: 400;"><strong> &nbsp; </strong></p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Number of teams </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">12</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Divisions </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">3 (Random assignment)</p>
+<p style="font-weight: 400; padding-left: 30px;">After each season, the divisions will be recast randomly</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Fee:&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">50$ per Season/Team</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;">Seasons 2022 and 2023 (i.e. 100 $) to be paid upfront before Startup Draft</p>
+<p style="font-weight: 400; padding-left: 30px;">League fees will be managed through Leaguesafe</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;">Future Draft Picks can be traded only in case that Participation fee for that season has been paid in full.</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><span style="text-decoration: line-through; color: #ff0000;"> Late payment for 2024 will cause Rookie Picks to be removed from the involved manager (more details will follow) </span></p>
+<p style="font-weight: 400; padding-left: 30px;">New rule applicable from 2023-03-25 onwards:</p>
+<p style="font-weight: 400; padding-left: 30px;">League fees must be paid 1 year in advance. Deadline: 1 day prior to the official NFL rookie draft</p>
+<p style="font-weight: 400; padding-left: 30px;">Example 1) in order to have no penalty rookie picks removed, league fee 2025 must be paid until approx. end April 2024</p>
+<p style="font-weight: 400; padding-left: 30px;">Example 2) in order to have no penalty rookie picks removed, league fee 2026 must be paid until approx. end April 2025</p>
+<p style="font-weight: 400; padding-left: 30px;">and so on&hellip;</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;">In case of delayed payments, the following penalty will be applied</p>
+<p style="font-weight: 400; padding-left: 30px;">Up to 1 week delay = no 1 <sup> st </sup> round draft pick in the corresponding draft year (i.e. 2025 in example 1, 2026 in example 2)</p>
+<p style="font-weight: 400; padding-left: 30px;">Up to 2 weeks delay = no 1 <sup> st </sup> + 2 <sup> nd </sup> round draft pick</p>
+<p style="font-weight: 400; padding-left: 30px;">Up to 3 weeks delay = no 1 <sup> st </sup> + 2 <sup> nd </sup> + 3 <sup> rd </sup> round draft pick</p>
+<p style="font-weight: 400; padding-left: 30px;">Up to 4 weeks delay = no 1 <sup> st </sup> + 2 <sup> nd </sup> + 3 <sup> rd&nbsp; </sup> +&nbsp; 4 <sup> th </sup> round draft pick</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Yearly Prizes: </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">1st Place = 350 $</p>
+<p style="font-weight: 400; padding-left: 30px;">2nd Place = 175 $</p>
+<p style="font-weight: 400; padding-left: 30px;">3rd Place = 75 $</p>
+<p style="font-weight: 400;">&nbsp;</p>
+<p style="font-weight: 400;">Starting Lineup:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p style="font-weight: 400;"><strong> 10 Roster Spots </strong></p>
+<p style="font-weight: 400;">&nbsp;</p>
+<ul>
+<li>1 QB</li>
+<li>2 RB</li>
+<li>2 WR</li>
+<li>1 TE</li>
+<li>1 Super Flex</li>
+<li>2 Flex (1 Slot added on 2023-04-26)</li>
+<li>1 DEF</li>
+</ul>
+<p style="font-weight: 400; padding-left: 30px;"><span style="text-decoration: line-through; color: #ff0000;">&nbsp; &nbsp; &nbsp;1 K (removed on 2023-04-23) </span></p>
+<p style="font-weight: 400;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;">Super Flex = QB, RB, WR or TE</p>
+<p style="font-weight: 400; padding-left: 30px;">Flex = RB, WR or TE</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;">Each Starting Lineup slot will lock individually at the scheduled game time of the player in each slot.</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Positional Limits&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">A max. of 2 DEF can be held on Roster</p>
+<p style="font-weight: 400;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Startup Draft Positions:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">Drawn at random when league is paid in full</p>
+<p style="font-weight: 400; padding-left: 30px;">Startup Draft: 24 round serpentine (snake) online draft - Veterans &amp; Free agents only</p>
+<p style="font-weight: 400; padding-left: 30px;">Online Slow Draft with a 12-hour timer per pick</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Rookie Draft 2022:&nbsp;&nbsp;&nbsp; </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">Reversed order of Startup Draft / 4 Rounds in Snake format</p>
+<p style="font-weight: 400; padding-left: 30px;">Online Slow Draft with a 12-hour timer per pick</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Rookie Draft 2023 and onwards&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">Linear Drafts of 4 rounds, will include rookies only and will take place after the NFL draft</p>
+<p style="font-weight: 400; padding-left: 30px;">Online Slow Draft with an 8 hours timer per pick</p>
+<p style="font-weight: 400;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Draft Picks Assignment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<ul>
+<li>Will be assigned based on Max Points For (during Regular Season) for the 9 teams not winning any Prizes</li>
+</ul>
+<p style="font-weight: 400; padding-left: 30px;">(i.e. Team with lowest Max PF will get 1st Pick of each Round, Team with 2nd lowest Max PF will get 2nd Pick, etc.)</p>
+<ul>
+<li>10th Pick of each Round will be assigned to 3rd Placed Team of previous Season</li>
+<li>11th Pick of each Round will be assigned to 2nd Placed Team of previous Season</li>
+<li>12th Pick of each Round will be assigned to 1st Placed Team of previous Season</li>
+</ul>
+<p style="font-weight: 400;">&nbsp;</p>
+<p style="font-weight: 400;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Format (Regular Season):&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">Weeks 1-14</p>
+<p style="font-weight: 400; padding-left: 30px;">Head 2 Head Matchups (two games each against Divisional Teams / one game each against non Divisional Teams)</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Format (League Playoffs):&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">Six (6) teams advance to League Playoffs.&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;">Three (3) Division winners&nbsp;- Seeds #1 - #3 based on best Record / Tie breaker is Points For</p>
+<p style="font-weight: 400; padding-left: 30px;">Two (2) teams with the best records among the remaining teams - Seeds #4 - #5 based on best Record / Tie breaker is Points For</p>
+<p style="font-weight: 400; padding-left: 30px;">One (1) team with the highest scored points for among the remaining teams - Seed #6</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Weeks 15-17 </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">Top 2 seeds get bye week in Week 15</p><p style="font-weight: 400; padding-left: 30px;"><strong> Weeks 15-17 </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">Top 2 seeds get bye week in Week 15</p>
+<p style="font-weight: 400; padding-left: 30px;">During Week 15, seed #3 plays against seed #6 / seed #4 plays against seed #5. The winners move on to the next round</p>
+<p style="font-weight: 400; padding-left: 30px;">
+    <span style="text-decoration: line-through; color: red;">
+        During Weeks 16, seeds #1 will play against the lowest remaining seeded team and seed #2, will play against the highest remaining from Wild Card Round&nbsp;
+    </span>
+</p>
+<p style="font-weight: 400; padding-left: 30px;">During Week 16, the #1 seed will have the choice to select their opponent in the Semi-Finals.</p>
+<p style="font-weight: 400; padding-left: 30px;">During Week 17, there will be the RedCom Bowl and the final for 3rd Place</p>
 
-    const goToSection = (section) => {
-        const top = section.getBoundingClientRect().top + window.pageYOffset;
-        window.scrollTo({left: 0, top, behavior: 'smooth'});
-    }
-</script>
-
-<style>
-    .constitution {
-        position: relative;
-        z-index: 1;
-        width: 92%;
-        max-width: 800px;
-        margin: 8em auto 10em;
-    }
-
-    h1 {
-        font-size: 2em;
-        line-height: 1.2em;
-        text-align: center;
-        margin: 2em 0 1.5em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-        line-height: 1.2em;
-    }
-
-    h3 {
-        text-decoration: underline;
-        font-size: 1.3em;
-        line-height: 1.2em;
-    }
-
-    h4 {
-        text-decoration: underline;
-        margin-left: 2em;
-        font-size: 1.2em;
-        line-height: 1.2em;
-    }
-
-    h5 {
-        margin-left: 6em;
-        font-size: 0.8em;
-        line-height: 1.1em;
-    }
-
-    .subBlock {
-        margin-left: 2.4em;
-    }
-
-    .sectionHeading {
-        margin: 4em 0 1.5em;
-    }
-
-    .subSectionHeading {
-        margin: 1.5em 0 1.5em;
-    }
-
-    .underscore {
-        text-decoration: underline;
-    }
-
-    .right {
-        text-align: right;
-    }
-
-    .positionMaximums td {
-        min-width: 3em;
-    }
-
-    .noUnderscore {
-        text-decoration: none;
-    }
-
-    .clickable {
-        cursor: pointer;
-    }
-
-    .clickable:hover {
-        color: #00316b;
-    }
-
-    p {
-        color: #777;
-    }
-</style>
-
-<div class="constitution">
-    <h1 class="noUnderscore">LEGENDS LEAGUE CONSTITUTION</h1>
-    
-    <h2 class="noUnderscore">TABLE OF CONTENTS</h2>
-    
-    <h3 class="noUnderscore clickable" onclick={() => goToSection(one)}>Section 1: Roster</h3>
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(oneOne)}>1.1 Positional Breakdown</h4>
-            <h5 class="noUnderscore clickable" onclick={() => goToSection(oneOneOne)}>1.1.1 Position Maximums</h5>
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(oneTwo)}>1.2 Trading</h4>
-            <h5 class="noUnderscore clickable" onclick={() => goToSection(oneTwoOne)}>1.2.1 Trade Collusion</h5>
-            <h5 class="noUnderscore clickable" onclick={() => goToSection(oneTwoTwo)}>1.2.2 Lending Players Prohibition</h5>
-            <h5 class="noUnderscore clickable" onclick={() => goToSection(oneTwoThree)}>1.2.3 Trade Deadline</h5>
-            <h5 class="noUnderscore clickable" onclick={() => goToSection(oneTwoFour)}>1.2.4 Trade Restrictions</h5>
-            <h5 class="noUnderscore clickable" onclick={() => goToSection(oneTwoFive)}>1.2.5 Veto/Trade Process</h5>
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(oneThree)}>1.3 Waiver Wire</h4>
-    
-    <h3 class="noUnderscore clickable" onclick={() => goToSection(two)}>Section 2: Drafting</h3>
-    
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(twoOne)}>2.1 Draft Order</h4>
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(twoTwo)}>2.2 Rookie Drafts</h4>
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(twoThree)}>2.3 Draft Day Trades</h4>
-    
-    <h3 class="noUnderscore clickable" onclick={() => goToSection(three)}>Section 3: Scoring System</h3>
-    
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(threeOne)}>3.1 Voting on Scoring System</h4>
-    
-    <h3 class="noUnderscore clickable" onclick={() => goToSection(four)}>Section 4: Postseason</h3>
-    
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(fourOne)}>4.1 Playoffs</h4>
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(fourTwo)}>4.2 Playoff Tiebreakers</h4>
-
-    <h3 class="noUnderscore clickable" onclick={() => goToSection(five)}>Section 5: Tanking Policy</h3>
-    
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(fiveOne)}>5.1 League Tanking Policy</h4>
-
-    <h3 class="noUnderscore clickable" onclick={() => goToSection(six)}>Section 6: Replacing Managers</h3>
-    
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(sixOne)}>6.1 Removing Managers</h4>
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(sixTwo)}>6.2 Replacing Managers</h4>
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(sixThree)}>6.3 Replacement Incentive</h4>
-
-    <h3 class="noUnderscore clickable" onclick={() => goToSection(seven)}>Section 7: League Finances</h3>
-    
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(sevenOne)}>7.1 League Dues</h4>
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(sixTwo)}>7.2 Payout</h4>
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(sixThree)}>7.3 Raising Dues</h4>
-    
-    
-    <hr />
-    
-    <h2 class="sectionHeading" bind:this={one}>Section 1 Roster Breakdown</h2>
-    
-    <h3 class="subSectionHeading" bind:this={oneOne}>1.1 Positional Breakdown</h3>
-    
-    <p>28 Total Players</p>
-    
-    <p class="underscore">Starters</p>
-    <ul>
-        <li>QB</li>
-        <li>RB</li>
-        <li>RB</li>
-        <li>WR</li>
-        <li>WR</li>
-        <li>TE</li>
-        <li>FLEX (RB/WR/TE)</li>
-        <li>FLEX (RB/WR)</li>
-        <li>D/ST</li>
-        <li>K</li>
-    </ul>
-    
-    <p>18 Bench (Expanded by 5 between the keague draft and start of regular season)</p>
-
-    <p>1 IR Spots (Player must be labeled as IR, Out, or Covid in the Sleeper App)</p>
-    
-        <h4 bind:this={oneOneOne}>1.1.1 Position Maximums</h4>
-        
-        <div class="subBlock">
-            <table class="positionMaximums">
-                <tbody>
-                <tr><td>QB</td><td class="right">3 active, 5 total</td></tr>
-                <tr><td>RB</td><td class="right">20</td></tr>
-                <tr><td>WR</td><td class="right">20</td></tr>
-                <tr><td>TE</td><td class="right">10</td></tr>
-                <tr><td>D/ST</td><td class="right">3</td></tr>
-                <tr><td>K</td><td class="right">3</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-
-    <h3 class="subSectionHeading" bind:this={oneTwo}>1.2 Trading</h3>
-    
-    <p>Trading of players and draft picks (up to 3 drafts away) are allowed. Trades will process immediately and will be reversed if vetoed or under investigation for collusion. Tradable assets include players, draft picks, and FAAB $.</p>
-    
-    <h4 bind:this={oneTwoOne}>1.2.1 Trade Collusion</h4>
-    <div class="subBlock">
-        <p>If any owners are suspected of accepting bribes/offering bribes to enhance their/another owners team via trade, trading any assets other than fantasy players, draft picks, FAAB $, or otherwise found guilty of engaging in any form of collusion*, all parties involved in the trade will be susceptible to punishment. The punishments will go as followed:</p>
-        
-        <ul>
-            <li>First Offense – Immediate reduction of FAAB budget by 80%</li>
-            <li>Second Offense – Immediate freeze on all transaction types for the next 18 weeks of regular season and playoff fantasy football games, including trades and waiver wire bids</li>
-            <li>Third Offense – A league meeting of all members not involved in any of the improper trades/activity in question will take place to discuss next steps.</li>
-        </ul>
-
-        <p>All trades that are found guilty of collusion, will be reversed/denied. If the trade had affected the outcome of previous games, the results of those games will be revised.  </p>
-
-        <p>*Collusion includes the organizing of veto votes against an acceptable trade.</p>
-
-        <p>The commissioner will err on the side of letting owners manage their teams the way they see fit. Any collusion will need to be clear. The commissioner reserves the right to step in and at the very least assess the thinking of any team involved in a heavily lop-sided trade. </p>
-    </div>
-
-    <h4 bind:this={oneTwoTwo}>1.2.2 Lending Players Prohibition</h4>
-    <div class="subBlock">
-        <p>Any player traded from a team may not be re-acquired via trade within 6 weeks of the original trade. Any teams involved in this behavior will be subject to the aforementioned collusion punishments.</p>
-    </div>
-    
-    <h4 bind:this={oneTwoThree}>1.2.3 Trade Deadline</h4>
-    <div class="subBlock">
-        <p>The trade deadline will be set for the Saturday of the week 11 games of the NFL season.</p>
-    </div>
-    
-    <h4 bind:this={oneTwoFour}>1.2.4 Trade Restrictions</h4>
-    <div class="subBlock">
-        <p>You will not be able to trade draft picks that are more than 3 drafts away. For example, during the 2021 season you cannot trade any picks in or after the 2025 draft. You may only trade FAAB $ from the current season.</p>
-    </div>
-    
-    <h4 bind:this={oneTwoFive}>1.2.5 Veto/Trade Process</h4>
-    <div class="subBlock">
-        <p>A total of 7 veto votes are required to veto a trade. Vetoes are only appropriate in instances of collusion or an egregious mismatch of value (i.e. CMC for a backup kicker). Not liking a trade does not warrant a veto.</p>
-    </div>
-    
-    
-    
-    <h3 bind:this={oneThree}>1.3 Waiver Wire</h3>
-    
-    <p>FAAB Waiver wire system. Each team will begin the season with $100. $0 bids are allowed. Bids will process Thursdays and Sundays at 9AM EST.</p>
-
-    <p>FAAB budgets will reset each season in January.</p>
-    
-    
-    <h2 class="sectionHeading" bind:this={two}>Section 2 Drafting</h2>
-    
-    <h3 bind:this={twoOne}>2.1 Draft Order</h3>
-    <p>The draft order each year will be a linear draft in reverse order of the previous year’s regular season standings.</p>
-
-    <h3 bind:this={twoTwo}>2.2 Rookie Drafts</h3>
-    <p>Rokkie drafts will consist of 3 round of drafting, with 5 minutes alotted for each pick. To make room for the incoming players, benches will be expanded by (5) spots. These spots will be removed in mid-August, at which point you will need to have cut the necessary players.</p>
-    <p>Any spots not filled during the draft, can be filled immediately afterwards from the waiver wire.</p>
-    
-    <h3 bind:this={twoThree}>2.3 Draft Day Trades</h3>
-    <p>If a trade is being made during the draft, one or both parties can alert the commissioner to pause the draft to allow for extra time to negotiate the trade.</p>
-    
-    <h2 class="sectionHeading" bind:this={three}>Section 3 Scoring System</h2>
-
-    <h3 bind:this={threeOne}>3.1 Scoring System</h3>
-    <p>The league scoring system breakdown is listed on the Sleeper fantasy app (for the most part, it follows typical .5PPR Scoring). The scoring system will never change without a majority league vote.</p>
-    
-    <h2 class="sectionHeading" bind:this={four}>Section 4 Postseason</h2>
-    
-    <h3 bind:this={fourOne}>4.1 Playoffs</h3>
-    <p>At the end of the season 6 teams will make the playoffs. The first round of playoffs will commence in week 15. Each team that wins their division and the 4 wild card teams that finish with the best records, will receive a playoff berth. The 2 teams that win their division will receive a bye week in the first round of the playoffs. Each playoff matchup will only last one week and the winner will advance. Week 18 will not be used.</p>
-    
-    <h3 bind:this={fourTwo}>4.2 Seeding Tiebreakers</h3>
-    <p>If two teams finish with the same record the tiebreakers will go as followed:</p>
-
-    <ol>
-        <li>Points For</li>
-        <li>Head 2 Head Record</li>
-        <li>Division Record</li>
-        <li>Total Points Against</li>
-        <li>Coin Flip</li>
-        <li>Duel to the death</li>
-    </ol>
-
-    <h2 class="sectionHeading" bind:this={five}>Section 5 Tanking Policy</h2>
-    
-    <h3 bind:this={fiveOne}>5.1 League Tanking Policy</h3>
-    <p>No team may intentionally leave starting roster spots empty. Any evidence of intentionally leaving roster spots empty in order to improve your draft position may be subject to punishment, including but not limited to the forfeiture of draft selections.</p>
-
-    <h2 class="sectionHeading" bind:this={six}>Section 6 Replacing Managers</h2>
-    
-    <h3 bind:this={sixOne}>6.1 Removing Managers</h3>
-    <p>Short of continuously failing to set a valid lineup, or confirmed collusion, no manager can be removed against their will. Participation, through the league chat, trade offers, and the waiver wire, is strongly encouraged but generally grounds for removal.</p>
-    
-    <h3 bind:this={sixTwo}>6.2 Replacing Managers</h3>
-    <p>When a manager needs to be replaced, the commisiooners will try to find a suitable candidate with some connection to at least a portion of the existing managers. Priority will be placed on managers who are eager to take on a dynasty commitment and will be very active within the league.</p>
-    
-    <h3 bind:this={sixThree}>6.3 Replacement Incentive</h3>
-    <p>In the event that a manager chooses to quit the league or is removed by a comissioner, an incoming manager is offered a 50% reductioon on their first year buy-in.</p>
-
-    <h2 class="sectionHeading" bind:this={seven}>Section 7 League Finances</h2>
-    
-    <h3 bind:this={sevenOne}>7.1 League Dues</h3>
-    <p>League dues are set at {dues}$. Dues are collected through <a href="https://www.leaguesafe.com/league/3949641">LeagueSafe</a> and collection will be sent out no later than the first of August. All managers must be fully paid up before the start of regular season. In the event that a manager fails to pay before the deadline, a 10% penalty will be addd to their payment and will go towards the payouts at the end of the year.</p>
-    
-    <h3 bind:this={sevenTwo}>7.2 Payout</h3>
-    <p>League payout is structured as follows:</p>
-    <ul>
-        <li>1st place: {dues * 8}$</li>
-        <li>2nd place: {dues * 3}$</li>
-        <li>3rd place: {dues}$</li>
-    </ul>
-    <p>In the event that a manager was fined due to late payment, their extra fee will be added to the winner's payout. Similarly, if new managers come into the league and the payout is smaller, the difference will come out of the winner's prize.</p>
-    
-    <h3 bind:this={sevenThree}>7.3 Raising Dues</h3>
-    <p>A ⅔ majority vote is required in order to raise league dues. In the event that a manager is no longer financially comfortable with the buyin, finding a co-manager to split the cost is reccomended.</p>
-
-</div>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Free Agency In Season:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">Waivers by way of blind bidding (FAAB)</p>
+<p style="font-weight: 400; padding-left: 30px;">Each team gets $100 blind bidding &ldquo;dollars&rdquo; for the entire Season</p>
+<p style="font-weight: 400; padding-left: 30px;">Continuous Waivers 12am EST</p>
+<p style="font-weight: 400; padding-left: 30px;">1 weekly free agency (FA) on Sunday</p>
+<p style="font-weight: 400; padding-left: 30px;">NFL players whose teams played on Thursday may be dropped from rosters on Friday as long as they were not in that team&rsquo;s Thursday&rsquo;s starting lineup</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> TIME PLAYERS ARE ON WAIVERS AFTER DROP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">1 Day</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> GAMES WAIVERS CLEAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">Tuesday End of Day (00:00 PST)</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Free Agency Off Season:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">First free agency is scheduled one day after Rookie draft is completed</p>
+<p style="font-weight: 400; padding-left: 30px;">Each team gets $100 blind bidding &ldquo;dollars&rdquo; for the entire Off-season</p>
+<p style="font-weight: 400; padding-left: 30px;">Continuous Waivers 12am EST for the entire Off-Season</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> TIME TO REVIEW PENDING TRADES </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">None - Trades are processed immediately</p>
+<p style="font-weight: 400; padding-left: 30px;">Any sign of collusion to maximize the chance of winning will be examined throughfully and in confirmed cases will cause the removal of the involved managers from the League.</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Trade Deadline&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">None</p>
+<p style="font-weight: 400;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Roster Requirement </strong> :</p>
+<p style="font-weight: 400; padding-left: 30px;">24 Total roster spots during NFL season</p>
+<p style="font-weight: 400; padding-left: 30px;">4 Taxi Squad slots</p>
+<p style="font-weight: 400; padding-left: 30px;">5 Injured Reserve (IR) slots / Eligible IR player status types are SUS (suspended) / COV (covid) &amp; IR (Injured reserve)</p>
+<p style="font-weight: 400; padding-left: 30px;">Players with (Q) Questionable,&nbsp; (D) Doubtful or (O) Out designation are not eligible for the injured reserve</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Scoring&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">Passing Yards= +0.04 per yard <strong> &nbsp; </strong> (25 yards = 1 point)</p>
+<p style="font-weight: 400; padding-left: 30px;">Passing TD = +4</p>
+<p style="font-weight: 400; padding-left: 30px;">2-Pt Conversion = +2</p>
+<p style="font-weight: 400; padding-left: 30px;">Pass Intercepted= -2</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;">Rushing Yards = +0.1 per yard ((10 yards = 1 point)</p>
+<p style="font-weight: 400; padding-left: 30px;">Rushing TD = +6</p>
+<p style="font-weight: 400; padding-left: 30px;">2-Pt Conversion = +2</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;">Reception = <span style="color: #ff0000;"> + </span> <span style="text-decoration: line-through;"> <span style="color: #ff0000; text-decoration: line-through;"> 0.50 </span> </span> + 1.00 (amended Rule on 2023-04-24)</p>
+<p style="font-weight: 400; padding-left: 30px;">Receiving Yards = +0.1 per yard &nbsp;(10 yards = 1 point)</p>
+<p style="font-weight: 400; padding-left: 30px;">Receiving TD = +6</p>
+<p style="font-weight: 400; padding-left: 30px;">2-Pt Conversion = +2</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;">Points per Field Goal Yard = +0.05 (e.g. 50 yds FG = 2.5 Pts)</p>
+<p style="font-weight: 400; padding-left: 30px;">PAT Made = +0.5</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;">Defense TD = +6</p>
+<p style="font-weight: 400; padding-left: 30px;">Points Allowed 0 = +10</p>
+<p style="font-weight: 400; padding-left: 30px;">Points Allowed 1-6 = +7</p>
+<p style="font-weight: 400; padding-left: 30px;">Points Allowed 7-13 = +4</p>
+<p style="font-weight: 400; padding-left: 30px;">Points Allowed 14-20 = +1</p>
+<p style="font-weight: 400; padding-left: 30px;">Points Allowed 28-34 = -1</p>
+<p style="font-weight: 400; padding-left: 30px;">Points Allowed 35+ = -4</p>
+<p style="font-weight: 400; padding-left: 30px;">Sacks = +1</p>
+<p style="font-weight: 400; padding-left: 30px;">Interceptions = +2</p>
+<p style="font-weight: 400; padding-left: 30px;">Fumble Recovery = +2</p>
+<p style="font-weight: 400; padding-left: 30px;">Safety = +2</p>
+<p style="font-weight: 400; padding-left: 30px;">Blocked Kick = +1</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;">Special Teams TD = +6</p>
+<p style="font-weight: 400; padding-left: 30px;">Special Teams Fumble Recovery = +2</p>
+<p style="font-weight: 400; padding-left: 30px;">Miscellaneous Fumble Lost = -2</p>
+<p style="font-weight: 400; padding-left: 30px;">Fumble Recovery TD = +6</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Tie Breaker&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">In case of a tie during the playoffs the following tie-breaker rules will apply:</p>
+<p style="font-weight: 400; padding-left: 30px;">1) Bench Points Total (not including Taxi and IR)</p>
+<p style="font-weight: 400; padding-left: 30px;">2) QB Points</p>
+<p style="font-weight: 400; padding-left: 30px;">3) RB Points</p>
+<p style="font-weight: 400; padding-left: 30px;">4) WR Points</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;"><strong> Rule changes&nbsp; </strong></p>
+<p style="font-weight: 400; padding-left: 30px;">All formal rule changes must be done during the offseason. The offseason period is considered the day after the RedCom Superbowl and the day before the rookie draft occurs.</p>
+<p style="font-weight: 400; padding-left: 30px;">&nbsp;</p>
+<p style="font-weight: 400; padding-left: 30px;">To amend any rule or regulation as defined in the bylaws, or to add another rule or regulation to it, a league member must bring the suggestion to the attention of the Commissioner in writing. The Commissioner will then present all of the specifics of the rules to the league members. A vote will be held and 75 % members of the league (9 of 12) must vote in favour <span style="text-decoration: line-through; color: #ff0000;"> all members of the league must vote unanimously </span> to change an existing rule or add a new rule. If a suggestion is voted down, the owner who offered the suggestion can revise the rule offering and present again. If the suggestion is voted down a second time, the matter will be closed for that season and can be reopened the following offseason.</p>
+<p style="font-weight: 400;">&nbsp;</p>
+<p style="font-weight: 400;">&nbsp;</p>
+<p style="font-weight: 400;">&nbsp;</p>
+<p style="font-weight: 400;">&nbsp;</p>
